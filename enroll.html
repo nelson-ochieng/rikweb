@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now | Robotics & Coding Institute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Robotics Institute of Kenya" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">Robotics</span>
+                        <span class="logo-subtitle">Institute of Kenya</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="enroll.html" class="active btn-nav">Enroll Now</a></li>
+                    <li><a href="support.html">Support</a></li>
+                <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div></ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Enrollment Form</h1>
+            <p>Take the first step towards your future in technology.</p>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="enrollment section">
+        <div class="container">
+            <div class="form-container">
+                <form id="enrollForm" class="contact-form">
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Select Course *</label>
+                            <select id="course" name="course" required>
+                                <option value="">-- Choose a Course --</option>
+                                <option value="coding">Coding & Logic</option>
+                                <option value="robotics">Robotics Engineering</option>
+                                <option value="ai">AI and ML</option>
+                                <option value="cv">Computer Vision</option>
+                                <option value="humanoid">Humanoid Development</option>
+                                <option value="raspberry">Raspberry Pi</option>
+                                <option value="pcb">PCB Design</option>
+                                <option value="3d">3D Design & Printing</option>
+                            </select>
+                            <span class="error-msg" id="courseError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your background or any questions you have"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit Enrollment</button>
+                </form>
+                <div id="formSuccess" class="success-msg" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Enrollment Submitted!</h3>
+                    <p>Thank you for enrolling. Our team will contact you shortly with further details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Robotics Institute of Kenya" class="logo-img">
+                        <div class="logo-text">
+                            <span class="logo-title">Robotics</span>
+                            <span class="logo-subtitle">Institute of Kenya</span>
+                        </div>
+                    </a>
+                    <p>Empowering the next generation of tech leaders through hands-on STEM education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="enroll.html">Enroll Now</a></li>
+                    <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div></ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Contact Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="support.html">FAQs</a></li>
+                    <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div></ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 799 746 678</p>
+                    <p><i class="fas fa-envelope"></i> info@robotics.africa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Robotics & Coding Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+<div class="floating-widget"><div class="widget-btn" id="enrollWidget" title="Enroll Now"><i class="fas fa-user-plus"></i></div></div></body>
+</html>
